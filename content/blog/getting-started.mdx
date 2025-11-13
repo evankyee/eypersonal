@@ -1,0 +1,75 @@
+---
+title: "Getting started with this site"
+date: "2024-01-10"
+excerpt: "How to customize and maintain your personal website."
+---
+
+Welcome! This is your personal website built with Next.js. Here's how to make it your own.
+
+## Customizing content
+
+### Home page
+
+Edit `app/page.tsx` to update your bio and about section. The text there is just placeholder content - replace it with your own story.
+
+### Links section
+
+In `components/Links.tsx`, you'll find the links section. Update the URLs and descriptions to point to your social media profiles and other places you want to share.
+
+### Footer
+
+Update `components/Footer.tsx` with your actual social media handles.
+
+## Adding blog posts
+
+Creating a new blog post is simple:
+
+1. Create a new `.mdx` file in the `content/blog` directory
+2. Add frontmatter at the top with title, date, and optional excerpt
+3. Write your content in markdown
+4. The post will automatically appear on your blog page
+
+Example frontmatter:
+
+```yaml
+---
+title: "My new post"
+date: "2024-01-15"
+excerpt: "A brief description of what this post is about."
+---
+```
+
+## Design philosophy
+
+This site is intentionally minimal and focused on content. The design follows a few principles:
+
+- **Readable typography** - Clean fonts with generous spacing
+- **Minimal distractions** - No unnecessary animations or effects
+- **Fast loading** - Static generation for optimal performance
+- **Easy maintenance** - Simple file structure, no database needed
+
+## Technical details
+
+The site is built with:
+
+- **Next.js 14** with the App Router
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling
+- **MDX** for blog posts
+
+To run locally:
+
+```bash
+npm install
+npm run dev
+```
+
+To build for production:
+
+```bash
+npm run build
+npm start
+```
+
+That's it! Enjoy your new site.
+
