@@ -20,6 +20,9 @@ export async function getAllPosts(): Promise<Post[]> {
       return []
     }
 
+    // List of slugs to hide from the blog listing
+    const hiddenPosts = ['getting-started', 'sample-post']
+
     const fileNames = fs.readdirSync(postsDirectory)
     const posts = fileNames
       .filter((fileName) => fileName.endsWith('.mdx') || fileName.endsWith('.md'))
@@ -38,6 +41,8 @@ export async function getAllPosts(): Promise<Post[]> {
           content,
         }
       })
+      // Filter out hidden posts and posts with hidden: true in frontmatter
+      .filter((post) => !hiddenPosts.includes(post.slug))
       .sort((a, b) => (a.date > b.date ? -1 : 1))
 
     return posts
