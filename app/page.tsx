@@ -20,7 +20,7 @@ export default function Home() {
       </p>
       
       <p>
-        I spent a year as a chef at a Michelin-starred restaurant. Naturally, I love cooking. I also enjoy skiing, lifting, reading about computer architecture, and the 49ers. 
+        For a year, I worked as a chef at a Michelin-starred restaurant. Naturally, I love cooking. I also enjoy skiing, lifting, reading about computer architecture, and the 49ers. 
       </p>
 
       <p>
