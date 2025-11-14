@@ -33,15 +33,15 @@ H ─ C ─ O ─ H
     H`,
   
   // Ethane
-  `H   H
-│   │
+  `    H   H
+    │   │
 H ─ C ─ C ─ H
     │   │
     H   H`,
   
   // Ethanol
-  `H   H
-│   │
+  `    H   H
+    │   │
 H ─ C ─ C ─ O ─ H
     │   │
     H   H`,
@@ -54,50 +54,50 @@ H ─ C ─ C ─ O ─ H
 H       H`,
   
   // Acetic acid
-  `H       O
-│       ║
+  `    H       O
+    │       ║
 H ─ C ─ C ─ O ─ H
     │
     H`,
   
   // Acetone
-  `H       H
-│       │
-H ─ C   C   C ─ H
+  `    H       H
+    │       │
+H ─ C ─ C ─ C ─ H
     │   ║   │
     H   O   H`,
   
   // Propane
-  `H   H   H
-│   │   │
+  `    H   H   H
+    │   │   │
 H ─ C ─ C ─ C ─ H
     │   │   │
     H   H   H`,
   
   // Propanol
-  `H   H   H
-│   │   │
+  `    H   H   H
+    │   │   │
 H ─ C ─ C ─ C ─ O ─ H
     │   │   │
     H   H   H`,
   
   // Butane
-  `H   H   H   H
-│   │   │   │
+  `    H   H   H   H
+    │   │   │   │
 H ─ C ─ C ─ C ─ C ─ H
     │   │   │   │
     H   H   H   H`,
   
   // Pentane
-  `H   H   H   H   H
-│   │   │   │   │
+  `    H   H   H   H   H
+    │   │   │   │   │
 H ─ C ─ C ─ C ─ C ─ C ─ H
     │   │   │   │   │
     H   H   H   H   H`,
   
   // Hexane
-  `H   H   H   H   H   H
-│   │   │   │   │   │
+  `    H   H   H   H   H   H
+    │   │   │   │   │   │
 H ─ C ─ C ─ C ─ C ─ C ─ C ─ H
     │   │   │   │   │   │
     H   H   H   H   H   H`,
@@ -110,8 +110,8 @@ H ─ C ─ O ─ C ─ H
     H       H`,
   
   // Glycerol
-  `H   H   H
-│   │   │
+  `    H   H   H
+    │   │   │
 H ─ C ─ C ─ C ─ H
     │   │   │
     O   O   O
@@ -119,8 +119,8 @@ H ─ C ─ C ─ C ─ H
     H   H   H`,
   
   // Ethylene glycol
-  `H   H
-│   │
+  `    H   H
+    │   │
 H ─ C ─ C ─ H
     │   │
     O   O
@@ -128,15 +128,15 @@ H ─ C ─ C ─ H
     H   H`,
   
   // Propionic acid
-  `H   H       O
-│   │       ║
+  `    H   H       O
+    │   │       ║
 H ─ C ─ C ─ C ─ O ─ H
     │   │
     H   H`,
   
   // Butanoic acid
-  `H   H   H       O
-│   │   │       ║
+  `    H   H   H       O
+    │   │   │       ║
 H ─ C ─ C ─ C ─ C ─ O ─ H
     │   │   │
     H   H   H`,
