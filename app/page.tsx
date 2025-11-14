@@ -16,11 +16,11 @@ export default function Home() {
       </p>
       
       <p>
-       I've worked some cool jobs in quant trading, product, hardware systems, and software development. I graduated from Duke as a triple major in ECE, Math, and CS with a minor in Chemistry. My academic research was funded by NASA. I also finished premed coursework to keep my parents happy.
+       I've worked some cool jobs in quant trading, product, hardware systems, and software development. I graduated from Duke as a triple major in ECE, Math, and CS with a minor in Chemistry. My undergrad research was funded by NASA. I also finished premed coursework to keep my parents happy.
       </p>
       
       <p>
-        For a year, I worked as a chef at a Michelin-starred restaurant. Naturally, I love cooking. I also enjoy skiing, lifting, reading about computer architecture, and the 49ers. 
+        For a year, I was a chef at a Michelin-starred restaurant. Naturally, I love cooking. I also enjoy skiing, lifting, reading about computer architecture, and the 49ers. 
       </p>
 
       <p>
