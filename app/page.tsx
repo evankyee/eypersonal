@@ -7,26 +7,24 @@ export default function Home() {
       <ChemistryAscii />
 
       <p>
-        I'm currently building something new - you can think of it as a space where ideas meet execution.
+        My name's Evan. This is my personal site, though I guess it's more presentational than personal.
+      </p>
+      
+      
+      <p>
+        I spend a lot of my time thinking about how ML can unlock profound improvements in just one small (yet very important) thing.
       </p>
       
       <p>
-        I previously cofounded a startup, which I'm now involved with as a board member.
+       I've worked some cool jobs including quant trading, product, hardware systems, and software development. I graduated from Duke as a triple major in ECE, Math, and CS with a minor in Chemistry. I also finished premed coursework to keep my parents happy.
       </p>
       
       <p>
-        In my spare time, I explore the web, read about language theory, and study technology more broadly - 
-        history, market currents, and emerging research.
+        I spent a year as a chef at a Michelin-starred restaurant. Naturally, I love cooking. I also enjoy skiing, lifting, reading about computer architecture, and the 49ers. 
       </p>
-      
+
       <p>
-        I'm a self-taught engineer but I'm naturally a much stronger designer, so that's what I practice these days. 
-        Either way, I'm happiest when I get to work with other builders to realize ambitious projects.
-      </p>
-      
-      <p>
-        Prior to all of this, I dropped out of a well-known university and spent time exploring different paths. 
-        I was born and raised in one city, and have rotated between several others in my adult life.
+       Most of all, I love collaborating and spending my time with amazing and transformative people. Feel free to reach out.
       </p>
 
       <hr style={{ margin: '40px 0', border: 'none', borderTop: '1px solid #ccc' }} />

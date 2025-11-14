@@ -1,16 +1,16 @@
 export const siteConfig = {
-  name: 'Your Name',
+  name: 'Evan Yee',
   description: 'Personal website',
   url: 'https://yourwebsite.com',
   
   author: {
-    name: 'Your Name',
-    email: 'hello@example.com',
+    name: 'Evan Yee',
+    email: 'evan@linotype.ai',
   },
   
   social: {
-    linkedin: 'https://linkedin.com/in/yourusername',
-    github: 'https://github.com/yourusername',
+    linkedin: 'https://www.linkedin.com/in/evan-yee/',
+    github: 'https://github.com/evankyee',
   },
 }
 
