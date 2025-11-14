@@ -4,6 +4,9 @@ import matter from 'gray-matter'
 
 const postsDirectory = path.join(process.cwd(), 'content/blog')
 
+// List of slugs to hide from the blog listing
+const hiddenPosts = ['getting-started', 'sample-post']
+
 export interface Post {
   slug: string
   title: string
@@ -13,15 +16,29 @@ export interface Post {
   content: string
 }
 
+// Get all posts including hidden ones (for static generation)
+export async function getAllPostSlugs(): Promise<string[]> {
+  try {
+    if (!fs.existsSync(postsDirectory)) {
+      return []
+    }
+
+    const fileNames = fs.readdirSync(postsDirectory)
+    return fileNames
+      .filter((fileName) => fileName.endsWith('.mdx') || fileName.endsWith('.md'))
+      .map((fileName) => fileName.replace(/\.(mdx|md)$/, ''))
+  } catch (error) {
+    console.error('Error reading post slugs:', error)
+    return []
+  }
+}
+
 export async function getAllPosts(): Promise<Post[]> {
   try {
     // Check if directory exists
     if (!fs.existsSync(postsDirectory)) {
       return []
     }
-
-    // List of slugs to hide from the blog listing
-    const hiddenPosts = ['getting-started', 'sample-post']
 
     const fileNames = fs.readdirSync(postsDirectory)
     const posts = fileNames
@@ -41,7 +58,7 @@ export async function getAllPosts(): Promise<Post[]> {
           content,
         }
       })
-      // Filter out hidden posts and posts with hidden: true in frontmatter
+      // Filter out hidden posts
       .filter((post) => !hiddenPosts.includes(post.slug))
       .sort((a, b) => (a.date > b.date ? -1 : 1))
 

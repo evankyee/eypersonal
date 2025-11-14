@@ -1,11 +1,12 @@
-import { getAllPosts, getPostBySlug } from '@/lib/blog'
+import { getAllPostSlugs, getPostBySlug } from '@/lib/blog'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
 
 export async function generateStaticParams() {
-  const posts = await getAllPosts()
-  return posts.map((post) => ({
-    slug: post.slug,
+  // Use getAllPostSlugs to get all posts including hidden ones for static generation
+  const slugs = await getAllPostSlugs()
+  return slugs.map((slug) => ({
+    slug: slug,
   }))
 }
 
