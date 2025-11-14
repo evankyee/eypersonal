@@ -7,7 +7,7 @@ export default function Home() {
       <ChemistryAscii />
 
       <p>
-        My name's Evan. This is my personal site, though I guess it's more presentational than personal.
+        My name's Evan. This is my personal site, though I guess it's more demonstrative than personal.
       </p>
       
       
