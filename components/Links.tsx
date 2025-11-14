@@ -2,15 +2,10 @@ import { siteConfig } from '@/config'
 
 export default function Links() {
   const links = [
-    { 
+    {
       title: 'Email',
       href: `mailto:${siteConfig.author.email}`,
       description: 'Get in touch'
-    },
-    {
-      title: 'Twitter/X',
-      href: siteConfig.social.twitter,
-      description: 'Thoughts and updates'
     },
     {
       title: 'GitHub',
