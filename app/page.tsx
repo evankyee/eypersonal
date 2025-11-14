@@ -16,7 +16,7 @@ export default function Home() {
       </p>
       
       <p>
-       I've worked some cool jobs including quant trading, product, hardware systems, and software development. I graduated from Duke as a triple major in ECE, Math, and CS with a minor in Chemistry. I also finished premed coursework to keep my parents happy.
+       I've worked some cool jobs in quant trading, product, hardware systems, and software development. I graduated from Duke as a triple major in ECE, Math, and CS with a minor in Chemistry. I also finished premed coursework to keep my parents happy.
       </p>
       
       <p>
