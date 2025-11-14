@@ -26,23 +26,25 @@ H ─ N ─ H`,
 H ─ C ─ H`,
   
   // Methanol
-  `H   H
-│   │
-H ─ C ─ O ─ H`,
+  `    H
+    │
+H ─ C ─ O ─ H
+    │
+    H`,
   
   // Ethane
   `H   H
 │   │
-C ─ C
-│   │
-H   H`,
+H ─ C ─ C ─ H
+    │   │
+    H   H`,
   
   // Ethanol
   `H   H
 │   │
-C ─ C ─ O ─ H
-│   │
-H   H`,
+H ─ C ─ C ─ O ─ H
+    │   │
+    H   H`,
   
   // Ethene
   `H       H
@@ -54,92 +56,90 @@ H       H`,
   // Acetic acid
   `H       O
 │       ║
-C ─ C ─ O ─ H
-│
-H`,
+H ─ C ─ C ─ O ─ H
+    │
+    H`,
   
   // Acetone
   `H       H
 │       │
-C   O   C
-│   ║   │
-H   C   H
-    │
-    H`,
+H ─ C   C   C ─ H
+    │   ║   │
+    H   O   H`,
   
   // Propane
   `H   H   H
 │   │   │
-C ─ C ─ C
-│   │   │
-H   H   H`,
+H ─ C ─ C ─ C ─ H
+    │   │   │
+    H   H   H`,
   
   // Propanol
   `H   H   H
 │   │   │
-C ─ C ─ C ─ O ─ H
-│   │   │
-H   H   H`,
+H ─ C ─ C ─ C ─ O ─ H
+    │   │   │
+    H   H   H`,
   
   // Butane
   `H   H   H   H
 │   │   │   │
-C ─ C ─ C ─ C
-│   │   │   │
-H   H   H   H`,
+H ─ C ─ C ─ C ─ C ─ H
+    │   │   │   │
+    H   H   H   H`,
   
   // Pentane
   `H   H   H   H   H
 │   │   │   │   │
-C ─ C ─ C ─ C ─ C
-│   │   │   │   │
-H   H   H   H   H`,
+H ─ C ─ C ─ C ─ C ─ C ─ H
+    │   │   │   │   │
+    H   H   H   H   H`,
   
   // Hexane
   `H   H   H   H   H   H
 │   │   │   │   │   │
-C ─ C ─ C ─ C ─ C ─ C
-│   │   │   │   │   │
-H   H   H   H   H   H`,
+H ─ C ─ C ─ C ─ C ─ C ─ C ─ H
+    │   │   │   │   │   │
+    H   H   H   H   H   H`,
   
   // Dimethyl ether
-  `H       H
-│       │
-C ─ O ─ C
-│       │
-H       H`,
+  `    H       H
+    │       │
+H ─ C ─ O ─ C ─ H
+    │       │
+    H       H`,
   
   // Glycerol
   `H   H   H
 │   │   │
-C ─ C ─ C
-│   │   │
-O   O   O
-│   │   │
-H   H   H`,
+H ─ C ─ C ─ C ─ H
+    │   │   │
+    O   O   O
+    │   │   │
+    H   H   H`,
   
   // Ethylene glycol
   `H   H
 │   │
-C ─ C
-│   │
-O   O
-│   │
-H   H`,
+H ─ C ─ C ─ H
+    │   │
+    O   O
+    │   │
+    H   H`,
   
   // Propionic acid
   `H   H       O
 │   │       ║
-C ─ C ─ C ─ O ─ H
-│   │
-H   H`,
+H ─ C ─ C ─ C ─ O ─ H
+    │   │
+    H   H`,
   
   // Butanoic acid
   `H   H   H       O
 │   │   │       ║
-C ─ C ─ C ─ C ─ O ─ H
-│   │   │
-H   H   H`,
+H ─ C ─ C ─ C ─ C ─ O ─ H
+    │   │   │
+    H   H   H`,
 ];
 
 const OrganicAsciiMoleculeGrid = () => {
