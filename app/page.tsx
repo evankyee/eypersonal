@@ -12,7 +12,7 @@ export default function Home() {
       
       
       <p>
-        I spend a lot of my time thinking about how ML can unlock profound improvements in just one small (yet very important) thing.
+        I spend a lot of my time thinking about how ML can unlock profound improvements in just one small (yet very important) thing. 
       </p>
       
       <p>
@@ -24,7 +24,7 @@ export default function Home() {
       </p>
 
       <p>
-       Most of all, I love collaborating and spending my time with amazing and transformative people. Feel free to reach out.
+       Most of all, I love collaborating and ideating with curious and transformative people. Some awesome VCs have financially enabled me to materialize that which doesn't yet exist. Feel free to reach out.
       </p>
 
       <hr style={{ margin: '40px 0', border: 'none', borderTop: '1px solid #ccc' }} />
