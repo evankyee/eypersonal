@@ -12,7 +12,7 @@ export default function Home() {
       
       
       <p>
-        I spend a lot of my time thinking about how applied math + AI can unlock profound improvements in just one small (yet very important) thing. 
+        I spend a lot of my time thinking about how applied AI and math can unlock profound improvements in just one small (yet very important) thing. 
       </p>
       
       <p>
