@@ -8,21 +8,22 @@ interface PDFViewerProps {
 
 export default function PDFViewer({ src, title, height = '85vh' }: PDFViewerProps) {
   return (
-    <div style={{ 
-      width: '100%', 
-      marginTop: '20px',
-      marginBottom: '20px',
-      border: '1px solid #333',
-      borderRadius: '4px',
-      overflow: 'hidden'
-    }}>
+    <div 
+      className="pdf-viewer-wide"
+      style={{ 
+        marginTop: '20px',
+        marginBottom: '20px',
+        border: '1px solid #ccc',
+        borderRadius: '4px',
+        overflow: 'hidden'
+      }}>
       {title && (
         <div style={{ 
           padding: '12px 16px', 
-          backgroundColor: '#1a1a1a',
-          borderBottom: '1px solid #333',
+          backgroundColor: '#f0f0f0',
+          borderBottom: '1px solid #ccc',
           fontSize: '14px',
-          color: '#888'
+          color: '#666'
         }}>
           {title}
         </div>
