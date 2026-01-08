@@ -1,12 +1,6 @@
 import { getAllPostSlugs, getPostBySlug } from '@/lib/blog'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
-import PDFViewer from '@/components/PDFViewer'
-
-// Custom components available in MDX files
-const components = {
-  PDFViewer,
-}
 
 export async function generateStaticParams() {
   // Use getAllPostSlugs to get all posts including hidden ones for static generation
@@ -36,7 +30,7 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       <hr />
 
       <div className="prose">
-        <MDXRemote source={post.content} components={components} />
+        <MDXRemote source={post.content} />
       </div>
     </>
   )

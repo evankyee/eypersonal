@@ -23,14 +23,6 @@ body {
   padding: 0 30px;
 }
 
-/* PDF viewer breaks out of container */
-.pdf-viewer-wide {
-  width: 90vw;
-  max-width: 1000px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
 ::selection {
   background: #000000;
   color: #ffffff;
