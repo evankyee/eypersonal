@@ -5,7 +5,7 @@ export const siteConfig = {
   
   author: {
     name: 'Evan Yee',
-    email: 'evan@linotype.ai',
+    email: 'evkyee@gmail.com',
   },
   
   social: {

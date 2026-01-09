@@ -26,16 +26,13 @@ note-to-self: work on brevity. Avoid redundancy. Don't repeat yourse--
 
 Obviously, lots of my daily dev work is done in Claude Code now. Experientially, it can feel somewhat unstimulating. I imagine this is what most non-technical work feels like: unrigorous trial and error without that *satisfaction* only derived from using one's brain to solve a puzzle with one's creativity. I'm not entirely sure how to recapture that joy I felt in 350 or 552. 
 
-I digress. I use Claude a *lot*. One feature I've seen remarkable improvement in is the auto-compacting of my conversations. Little context window capacity is an obvious way to degrade model performance. However, in-context learning is a ____ READ ATTN PAPER
+Anyways, I use Claude a *lot*. One feature I've seen remarkable improvement in is the auto-compacting of my conversations. Little context window capacity is an obvious way to degrade model performance. However, in-context learning is learning by conditioning rather than parameter updates: the model doesn’t change its weights; it uses attention to treat the prompt as a temporary dataset and implement an update-like algorithm in the forward pass. Therefore, this compaction is not some compression of our model weights W. It is merely a compression of the temporary dataset with de-noising.
 
-taking lots of info and distilling it down in compression.
+Claude's compaction takes the LLM's vast in-context learnings and runs a compression. Mentally one can compare this compression to a two-day task with a night of sleep in the middle. 
 
-Wonder if there's a garbage collection system for memory rather than raw compression. Like a de-noising audoencoder. 
+However, because context compression is lossy, we still need to re-contextualize Claude on our codebase. Whether that's specific file structures, code preferences, micro-services, or spec sheets, Claude still "forgets" without proper documentation. Similarly, I believe that written introspection and case studies will be invaluable to preserving a positive beta of intelligence to experience.
 
-For myself, distilling my experiences into memory is certainly lossy, especially with long term memory. Therefore, I am trying to build an alternative autoencoding system in my life, where I can recreate the bottleneck layer (my writing) to apply more broadly (world)
-
-find papers relevant.
-
+I have no neuroscience training, but the practice of writing these blogs almost feels like training an effecient autoencoder for human experience. The input vectors are the physical inputs of my daily life which undergo some bio-sensory signal processing. This prompts some activation function to develop my raw thoughts which are further compressed into human language. This human language serves as the bottleneck layer, which my autoencoder should be able to recreate into thoughts and actions in the physical world. NEED A PAPER HERE on compression and recreation in human brain.
 
 
 
