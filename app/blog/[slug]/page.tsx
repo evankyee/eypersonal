@@ -5,6 +5,7 @@ import PDFViewer from '@/components/PDFViewer'
 import { Sidenote, Marginnote } from '@/components/Sidenote'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
+import type { PluggableList } from 'unified'
 
 // Custom components available in MDX files
 const components = {
@@ -46,8 +47,8 @@ export default async function BlogPost({ params }: { params: { slug: string } })
           components={components}
           options={{
             mdxOptions: {
-              remarkPlugins: [remarkMath],
-              rehypePlugins: [rehypeKatex],
+              remarkPlugins: [remarkMath] as PluggableList,
+              rehypePlugins: [rehypeKatex] as PluggableList,
             },
           }}
         />
