@@ -2,10 +2,15 @@ import { getAllPostSlugs, getPostBySlug } from '@/lib/blog'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import Link from 'next/link'
 import PDFViewer from '@/components/PDFViewer'
+import { Sidenote, Marginnote } from '@/components/Sidenote'
+import remarkMath from 'remark-math'
+import rehypeKatex from 'rehype-katex'
 
 // Custom components available in MDX files
 const components = {
   PDFViewer,
+  Sidenote,
+  Marginnote,
 }
 
 export async function generateStaticParams() {
@@ -36,7 +41,16 @@ export default async function BlogPost({ params }: { params: { slug: string } })
       <hr />
 
       <div className="prose">
-        <MDXRemote source={post.content} components={components} />
+        <MDXRemote 
+          source={post.content} 
+          components={components}
+          options={{
+            mdxOptions: {
+              remarkPlugins: [remarkMath],
+              rehypePlugins: [rehypeKatex],
+            },
+          }}
+        />
       </div>
     </>
   )

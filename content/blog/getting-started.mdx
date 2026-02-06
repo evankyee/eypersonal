@@ -73,3 +73,23 @@ npm start
 
 That's it! Enjoy your new site.
 
+
+
+. Blockquotes (indented italic sections)
+Just use standard markdown > syntax:
+> This helps explain how carefree people can be in assuming the CLT> applies, sometimes even when they haven't looked at the distributions:> convergence really doesn't take much.
+This will render with the gold left border and  italic styling like in that screenshot.
+2. Sidenotes (right margin footnotes)
+Use the <Sidenote> component inline in your text:
+This claim carries some risk, because assuming an inappropriatetheoretical distribution shields your reasoning from reality.<Sidenote id={1}>Conditioning on a hypothesis based on a theoretical distribution is a way to simplify calculations but it also establishes a worldview where plausible outcomes are practically impossible.</Sidenote>
+On desktop: appears in the right margin
+On mobile: tap the number to expand it inline
+3. Math equations
+Inline math (within a sentence):
+The probability is approximately $P(X \geq 6) \approx 0.0088\%$
+Block math (centered on its own line):
+$$P(\text{top 5 at least 6 of 7 years}) = \sum_{k=6}^{7} \binom{7}{k} \left(\frac{5}{32}\right)^k \left(\frac{27}{32}\right)^{7-k}$$
+Example for your 49ers post
+Here's how you might use all three in insurance-niners-injuries.mdx:
+Assuming injuries are purely random, the probability of finishing top five in injuries *at least* 6/7 years is approximately $0.0088\%$.<Sidenote id={1}>Calculated using the binomial distribution with $n=7$, $k \geq 6$, and $p = 5/32$.</Sidenote>> This helps explain how carefree people can be in assuming the CLT> applies, sometimes even when they haven't looked at the distributions.The expected value can be written as:$$E[X] = \sum_{i=1}^{n} x_i \cdot P(x_i)$$
+Run npm install when you're ready, and these features will all work!
